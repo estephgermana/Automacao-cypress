@@ -1,0 +1,48 @@
+README - Automação de Testes com Cucumber e Page Object
+Descrição do Projeto
+Este projeto realiza a automação de um formulário no site Sample App utilizando Cucumber para a escrita de testes e Page Object para a organização e encapsulamento do código. O objetivo é preencher um formulário em várias etapas e verificar se o e-mail foi enviado com sucesso.
+
+Estrutura do Projeto
+cypress.config.js: Configuração do Cypress e integração com Cucumber.
+cypress/pages: Contém os arquivos de Page Object que representam as páginas do formulário.
+cypress/integration: Contém os arquivos de especificação do Cucumber.
+cypress/support: Contém suporte e comandos customizados.
+Passo a Passo da Automação
+Visitar o Site
+
+Acessar o site http://sampleapp.tricentis.com/101/app.php.
+Preencher Dados do Veículo
+
+Preencher o formulário na aba "Enter Vehicle Data" com informações válidas.
+Clicar no botão "Next".
+Preencher Dados do Segurado
+
+Preencher o formulário na aba "Enter Insurant Data" com informações válidas.
+Clicar no botão "Next".
+Preencher Dados do Produto
+
+Preencher o formulário na aba "Enter Product Data" com informações válidas.
+Clicar no botão "Next".
+Selecionar Opção de Preço
+
+Preencher o formulário na aba "Select Price Option" com a opção desejada.
+Clicar no botão "Next".
+Enviar Cotação
+
+Preencher o formulário na aba "Send Quote" com as informações necessárias.
+Clicar no botão "Send".
+Verificar Mensagem de Sucesso
+
+Confirmar que a mensagem "Sending e-mail success!" é exibida na tela.
+Tecnologias Utilizadas
+IDE: Visual Studio Code
+Linguagem: JavaScript
+Ferramentas: Cypress, Cucumber, Page Object
+Estrutura do Código
+Page Objects: Arquivos que representam as páginas e encapsulam a lógica de interação com os elementos da interface.
+Step Definitions: Arquivos que definem os passos do Cucumber e utilizam os Page Objects para realizar as ações no site.
+Features: Arquivos .feature que descrevem os cenários de teste em linguagem Gherkin.
+Execução da Automação
+
+Para executar os testes, utilize o comando:
+npx cypress open
